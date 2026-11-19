@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-grabbit = "grabbit:main"
+grabbit = "grabbit.cli:main"
 
 [tool.setuptools]
-py-modules = ["grabbit"]
+packages = ["grabbit"]
