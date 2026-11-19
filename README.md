@@ -19,7 +19,7 @@ A simple command-line tool that grabs all the images from any web page and saves
 
 ## Installation
 
-1. Put `grabbit.py` and `pyproject.toml` in the same folder.
+1. Make sure the project folder contains `pyproject.toml` and the `grabbit/` package folder.
 2. Open a terminal in that folder and run:
 
 ```bash
@@ -92,7 +92,7 @@ grabbit --version   # show the version
 
 | Problem | Fix |
 |---|---|
-| `grabbit: command not found` | Your Python scripts folder isn't on your PATH. Run it directly instead: `python grabbit.py <url>` |
+| `grabbit: command not found` | Your Python scripts folder isn't on your PATH. Run it directly instead: `python -m grabbit.cli <url>` (or reinstall with `pip install .`) |
 | `No images found on this page` | The site probably loads images with JavaScript. Grabbit reads the page's HTML only, so it can't see those. |
 | Some images show as failed | The image may be deleted, blocked, or not a real image. The reason is printed at the end. |
 | `403 Forbidden` errors | The site blocks scraping tools. Nothing Grabbit can do about it. |
