@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grabbit"
+version = "1.0.0"
+description = "Grab all images from any web page into your Downloads folder."
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28",
+    "beautifulsoup4>=4.11",
+    "tqdm>=4.64",
+]
+
+[project.scripts]
+grabbit = "grabbit:main"
+
+[tool.setuptools]
+py-modules = ["grabbit"]
