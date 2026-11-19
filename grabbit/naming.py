@@ -8,6 +8,8 @@ from urllib.parse import unquote, urlparse
 
 import mimetypes
 
+from .images import IMAGE_EXTS, CONTENT_TYPE_EXT, GENERIC_TYPES
+
 _path_lock = threading.Lock()
 
 
